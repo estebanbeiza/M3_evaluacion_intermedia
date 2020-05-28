@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+ 
 }
 
 .row::after {
@@ -23,7 +25,6 @@ header {
     color: gold;
     padding: 5px;
     text-align:center;
-    border-radius: 10px;
     margin-bottom: 10px;
 }
 
@@ -31,11 +32,10 @@ nav {
     background-color: gold;
     color: darkblue;
     font-weight: 20px;
-    border-radius: 10px;
     margin-bottom: 10px;
     padding: 15px;
     text-align: center; 
-    word-spacing: 10px;
+    word-spacing: 10px;    
 }
 
 nav a:link {
@@ -59,8 +59,10 @@ nav a:link {
     color:blue;
   }
 
+  img {
+    width: 140px;
+  }
 .caja {
-  border-radius: 10px;
   padding:10px;
   background-color: blue;
   color: white;
@@ -75,7 +77,6 @@ nav a:link {
 
 footer {
   background-color: pink;
-  border-radius: 10px;
   padding: 8px;
   margin-top: 10px;
 }
@@ -126,3 +127,6 @@ footer {
   .parrafo {display:block}
   .margen-left { margin-left: 10px;}
 }
+
+
+
