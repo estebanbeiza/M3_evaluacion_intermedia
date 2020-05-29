@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    letter-spacing: 2px
  
 }
 
@@ -20,19 +21,33 @@ body {
     font-family: "Lucida Sans", sans-serif;
 }
 
+
+h1{
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: right;
+  margin-right: 20px;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 80px;
+  
+}
+
 header {
-    background-color: darkblue;
+
+  background-image: url(https://img.freepik.com/vector-gratis/concepto-sistema-seguridad-abstracto-huella-digital-fondo-tecnologia_43778-473.jpg?size=626&ext=jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(35, 35, 56);
     color: gold;
-    padding: 5px;
+    padding: 35px;
     text-align:center;
-    margin-bottom: 10px;
+    background-position: center;
+    
 }
 
 nav {
-    background-color: gold;
-    color: darkblue;
+    background-color: rgb(15, 15, 13);
+    color: rgb(209, 209, 223);
     font-weight: 20px;
-    margin-bottom: 10px;
     padding: 15px;
     text-align: center; 
     word-spacing: 10px;    
@@ -40,7 +55,7 @@ nav {
 
 nav a:link {
     text-decoration: none;
-    color:blue;
+    color:rgb(255, 255, 255);
     font-weight: bolder;
   }
 
@@ -51,7 +66,7 @@ nav a:link {
 
   nav a:visited {
     text-decoration: underline;
-    color:blue;
+    color:rgb(144, 144, 165);
   }
 
   nav a:active {
@@ -59,26 +74,62 @@ nav a:link {
     color:blue;
   }
 
-  img {
+  .imagen {
     width: 140px;
+ 
   }
-.caja {
-  padding:10px;
-  background-color: blue;
-  color: white;
-  margin-top: 0px;
-  margin-bottom: 10px;
+
+  .subTitulos{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+  }
+
+  h2{
+    margin-top: 10px;
+    margin-bottom: 10px;;
+  }
+
+
+ul {
+  padding: 0px 0px 8px 0px;
 }
+
+ li {
+  list-style: none;
+  margin: 0px;
+ } 
+
+ p {
+   padding: 3px 0px 3px 0px;
+ }
+
+.caja {
+
+  background: rgba(15,15,13,1);
+  background: -moz-linear-gradient(-45deg, rgba(15,15,13,1) 0%, rgba(38,38,54,1) 42%, rgba(38,38,54,1) 67%, rgba(15,15,13,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(15,15,13,1)), color-stop(42%, rgba(38,38,54,1)), color-stop(67%, rgba(38,38,54,1)), color-stop(100%, rgba(15,15,13,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(15,15,13,1) 0%, rgba(38,38,54,1) 42%, rgba(38,38,54,1) 67%, rgba(15,15,13,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(15,15,13,1) 0%, rgba(38,38,54,1) 42%, rgba(38,38,54,1) 67%, rgba(15,15,13,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(15,15,13,1) 0%, rgba(38,38,54,1) 42%, rgba(38,38,54,1) 67%, rgba(15,15,13,1) 100%);
+  background: linear-gradient(135deg, rgba(15,15,13,1) 0%, rgba(38,38,54,1) 42%, rgba(38,38,54,1) 67%, rgba(15,15,13,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0d', endColorstr='#0f0f0d', GradientType=1 );
+  padding:15px;
+  background-color: rgb(38, 38, 54);
+  color: rgb(228, 224, 224);
+  margin-top: 0px;
+  height: auto;
+}
+
+
 
 .caja-par {
   padding-top: 0px;
-  margin-bottom: 10px;
 }
 
 footer {
-  background-color: pink;
-  padding: 8px;
-  margin-top: 10px;
+  background-color: rgb(15, 15, 13);
+  color: rgb(209, 209, 223);
+  padding: 30px 0px 30px 15px;
 }
 
 
@@ -88,45 +139,50 @@ footer {
 
 }
 
-@media only screen and (min-width: 936px) {
+@media only screen and (min-width: 636px) {
   /* For Tablet: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 48.33%;}
-  .col-s-7 {width: 50%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-  .menu-a {display:block;}
-  .menu-selected { display: none;}
-  .parrafo {display:block}
-  .margen-left { margin-left: 10px;}
+ 
+  .caja {
+    padding:25px;
+    color: rgb(228, 224, 224);
+    margin-top: 0px;
+    height: 100vh;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: rgba(15,15,13,1);
+    background: -moz-linear-gradient(-45deg, rgba(15,15,13,1) 0%, rgba(38,38,54,1) 42%, rgba(38,38,54,1) 67%, rgba(15,15,13,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(15,15,13,1)), color-stop(42%, rgba(38,38,54,1)), color-stop(67%, rgba(38,38,54,1)), color-stop(100%, rgba(15,15,13,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(15,15,13,1) 0%, rgba(38,38,54,1) 42%, rgba(38,38,54,1) 67%, rgba(15,15,13,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(15,15,13,1) 0%, rgba(38,38,54,1) 42%, rgba(38,38,54,1) 67%, rgba(15,15,13,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(15,15,13,1) 0%, rgba(38,38,54,1) 42%, rgba(38,38,54,1) 67%, rgba(15,15,13,1) 100%);
+    background: linear-gradient(135deg, rgba(15,15,13,1) 0%, rgba(38,38,54,1) 42%, rgba(38,38,54,1) 67%, rgba(15,15,13,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0d', endColorstr='#0f0f0d', GradientType=1 );
+  
 }
 
-@media only screen and (min-width: 1366px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 22.2%;}
-  .col-4 {width: 30.33%;}
-  .col-5 {width: 42.66%;}
-  .col-6 {width: 48.33%;}
-  .col-7 {width: 58.3%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 77.66%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-  .menu-a {display:block;}
-  .menu-selected { display: none;}
-  .parrafo {display:block}
-  .margen-left { margin-left: 10px;}
+
+  body{
+    background-color: rgb(15, 15, 13);
+  }
+
+  h1{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 80px;
+    
+  }
+
+  footer {
+    background-color: rgb(15, 15, 13);
+    color: rgb(209, 209, 223);
+    padding: 30px 0px 30px 50px;
+  }
+  
+
 }
+
+
+
 
 
 
